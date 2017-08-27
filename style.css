@@ -1,1 +1,103 @@
-.
+*{
+	font-family: "Open Sans";
+	display: inline-block;
+	margin: 0;
+}
+
+
+header{
+	background: #455A64;
+	width: 48%;
+	height: 100%;
+	float: left;
+	padding: 10px;
+	text-align: center;
+	margin-top: 30%
+	}
+
+h1{
+	color:#FFFFFF;
+	display: block;
+	font-size: 40pt;
+	margin: auto;
+}
+
+section{
+	width: 48%;
+	float: left;
+	padding: 10px;
+	margin: 0px;
+	background: #CFD8DC;
+}
+
+.website{
+	display: block;
+	margin: 40px;
+	width: 375px;
+	height: 35px;
+	font-size: 12pt;
+}
+
+.url{
+	display: block;
+	margin: 40px;
+	width: 375px;
+	height: 35px;
+	font-size: 12pt;
+}
+
+
+.submit{
+	background:#FFC107;
+	color:#FFFFFF;
+	display: block;
+	margin: 40px auto;
+	width: 375px;
+	height: 35px;
+	font-size: 12pt;
+	font-weight: bold;
+	border: solid 0px #FFC107;
+}
+
+img{
+	height: 5%;
+}
+
+div{
+	background: #FFFFFF;
+	margin: 2% 5%;
+	text-align: left;
+	height: 15%;
+	width: 83%;
+	border: 1px solid #607D8B;
+	padding: 4%;
+}
+
+.read{
+	border: none;
+	color: #455A64;
+	background: #FFFFFF;
+	text-decoration: underline;
+}
+
+.delete{
+	float: right;
+	border: none;
+	color: #455A64;
+	background: #FFFFFF;
+	text-decoration: underline;
+}
+
+h2{
+	display: block;
+	color: #455A64;
+	font-weight: bolder;
+	font-size: 24pt;
+}
+
+a{
+	display: block;
+	color: #607D8B;
+	font-size: 18pt;
+
+}
