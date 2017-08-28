@@ -21,13 +21,3 @@ $('.submit').on('click', function(event) {
 		</article>`
 	);
 });
-
-
-
-// $websiteInput.prepend(h2);
-
-// $urlInput.innerHTML(a);
-
-// $( ".inner" ).prepend( "<p>Test</p>" );
-
-//.append
