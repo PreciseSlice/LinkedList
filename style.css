@@ -48,7 +48,7 @@ article {
 
 h2 {
 	color: #455A64;
-	display: block;
+	/*display: block;*/
 	font-size: 24pt;
 	font-weight: 400;
 	margin-top: 2px;
@@ -79,7 +79,7 @@ a {
 }
 
 .url {
-	display: block;
+	/*display: block;*/
 	font-size: 12pt;
 	height: 35px;
 	margin: 40px;
@@ -107,7 +107,8 @@ a {
 	border: none;
 	color: #455A64;
 	padding-left: 0;
-	text-decoration: none;
+	text-decoration: underline;
+	padding-bottom: 4%;
 }
 
 .delete {
@@ -116,5 +117,5 @@ a {
 	color: #455A64;
 	float: right;
 	padding-right: 10px;
-	text-decoration: none;
+	text-decoration: underline;
 }
