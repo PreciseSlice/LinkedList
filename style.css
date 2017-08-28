@@ -14,13 +14,14 @@ header {
 	height: 100%;
 	padding: 10px;
 	text-align: center;
-	width: 48%;
+	width: 50%;
+	position: fixed;
 	}
 
 h1 {
 	color:#FFFFFF;
 	display: block;
-	font-size: 40pt;
+	font-size: 54pt;
 	font-weight: 800; 
 	margin: auto;
 	margin-top: 28%;
@@ -30,36 +31,44 @@ section {
 	background: #CFD8DC;
 	float: left;
 	font-weight: 800;
-	height: 100%;
-	margin: auto;
+	height: 125%;
+	margin: 0px;
 	padding: 10px;
-	width: 48%;
+	width: 48.5%;
+	position: relative;
+	left:50%;
 }
 
 article {
 	background: #FFFFFF;
 	border: 1px solid #607D8B;
 	font-weight: 400;
-	margin: 4% 9%;
-	padding-left: 10px;
+	margin: 6% auto;
+	padding: 2% 5%;
 	text-align: left;
-	width: 60%;
+	width: 80%;
 }
 
 h2 {
 	color: #455A64;
 	/*display: block;*/
-	font-size: 24pt;
-	font-weight: 400;
+	font-size: 18pt;
+	font-weight: 800;
 	margin-top: 2px;
+
 }
 
 a {
 	color: #607D8B;
-	display: block;
-	font-size: 12pt;
+	font-size: 14pt;
 	font-weight: 400;
 	text-decoration: underline;
+}
+
+a:hover {
+	color: #455A64;
+	text-decoration-color: #FFC107;
+	font-weight: bold;
 }
 
 .first-field {
@@ -67,35 +76,36 @@ a {
 }
 
 .link-logo {
-	height: 40px;
+	height: 50px;
 }
 
 .website {
-	display: block;
-	font-size: 12pt;
-	height: 35px;
-	margin: 40px;
-	width: 375px;
+	font-size: 18pt;
+	height: 50%;
+	margin: 40px auto;
+	width: 95%;
+	padding: 1%;
 }
 
 .url {
-	/*display: block;*/
-	font-size: 12pt;
-	height: 35px;
-	margin: 40px;
-	width: 375px;
+	font-size: 18pt;
+	height: 50%;
+	margin: 40px auto;
+	width: 95%;
+	padding: 1%;
 }
 
 .submit {
 	background:#FFC107;
-	border: solid 0px #FFC107;
+	border: none;
 	color:#FFFFFF;
 	display: block;
-	font-size: 12pt;
+	font-size: 18pt;
 	font-weight: bold;
-	height: 35px;
+	height: 50%;
 	margin: 40px auto;
-	width: 375px;
+	width: 95%;
+	padding: 2%;
 }
 
 .first-article {
@@ -108,7 +118,8 @@ a {
 	color: #455A64;
 	padding-left: 0;
 	text-decoration: underline;
-	padding-bottom: 4%;
+	padding-bottom: 1%;
+	font-size: 12pt;
 }
 
 .delete {
@@ -118,4 +129,33 @@ a {
 	float: right;
 	padding-right: 10px;
 	text-decoration: underline;
+	font-size: 12pt;
 }
+
+
+.read:hover{
+	color: #455A64;
+	text-decoration-color: #FFC107;
+	font-weight: bold;
+}
+
+.read:active{
+	color: #F05A28;
+	text-decoration: none;
+	font-weight: bold;}
+
+.delete:hover{
+	color: #455A64;
+	text-decoration-color: #FFC107
+}
+
+.submit:hover{
+	background: #FFD773;
+}
+
+hr{color: #CFD8DC;
+	margin: 20px auto;
+	width: 100%;
+}
+
+@media (max-width: 700px)
