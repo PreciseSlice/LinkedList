@@ -1,9 +1,5 @@
 //Form functionality
 
-$(document).ready(function(){
-	$('.first-article').hide();
-});
-
 $('.submit').on('click', function(event) {
 	event.preventDefault();
 	var websiteInput = $('.website-user-input').val();
@@ -21,3 +17,16 @@ $('.submit').on('click', function(event) {
 		</article>`
 	);
 });
+
+$('.bookmark-container').on('click', function(event){
+	event.preventDefault();
+	var currentCard= $(event.target).closest('article');
+	if(event.target.className === 'read') { 
+		currentCard.toggleClass('read-link');
+	}
+	if(event.target.className === 'delete') {
+		currentCard.slideUp();	
+	}
+});
+
+
