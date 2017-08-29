@@ -1,32 +1,85 @@
-//Form functionality
+// GLobal Variables
 
-$('.submit').on('click', function(event) {
+
+var websiteInput = $('.website-user-input');
+
+var urlInput = $('.url-user-input');
+
+var totalLinkCounter = 0;
+
+
+// Event Listeners
+
+
+$('.submit').on('click', prependCard);
+
+
+$('.bookmark-container').on('click', function(event){
 	event.preventDefault();
-	var websiteInput = $('.website-user-input').val();
-	var urlInput = $('.url-user-input').val();
+	var currentCard= $(event.target).closest('article');
+	
+	if(event.target.className === 'read') { 
+		currentCard.toggleClass('read-link');
+	}
+	if(event.target.className === 'delete') {
+		currentCard.slideUp();
+		deleteCounter();	
+	}
+});
+
+websiteInput.on('input', enableSubmitBtn);
+urlInput.on('input', enableSubmitBtn);
+
+
+// Functions 
+
+
+function prependCard(event) {
+	event.preventDefault();
+	var websiteInputValue = websiteInput.val();
+	var urlInputValue = urlInput.val();
+	
 	$('.bookmark-container').prepend(
+		
 		`<article class="first-article">
-			<h2 class=website-title>${websiteInput}</h2>
+			<h2 class=website-title>${websiteInputValue}</h2>
 			<hr />
 			<form>
-			<a href="${urlInput}" class="url-placeholder">${urlInput}</a>
+			<a href="${urlInputValue}" class="url-placeholder">${urlInputValue}</a>
 			<hr />
 				<button class="read">Read</button>
 				<button class="delete">Delete</button>
 			</form>
 		</article>`
 	);
-});
+	redisableSubmitBtn();
+	deleteInputFields();
+	incramentCounter();
+}
 
-$('.bookmark-container').on('click', function(event){
-	event.preventDefault();
-	var currentCard= $(event.target).closest('article');
-	if(event.target.className === 'read') { 
-		currentCard.toggleClass('read-link');
+function enableSubmitBtn() {
+	if(websiteInput.val() !== '' && urlInput.val() !== '') {
+		$('.submit').attr('disabled',false);
 	}
-	if(event.target.className === 'delete') {
-		currentCard.slideUp();	
-	}
-});
+} 
 
+function redisableSubmitBtn(){
+	$('.submit').attr('disabled', true);
+}
 
+function deleteInputFields(){
+	websiteInput.val('');
+	urlInput.val('');
+}
+
+function incramentCounter(){
+	console.log(totalLinkCounter);
+	totalLinkCounter++;
+	console.log(totalLinkCounter);
+}
+
+function deleteCounter(){
+	console.log(totalLinkCounter);
+	totalLinkCounter--;
+	console.log(totalLinkCounter);
+}
