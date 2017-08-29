@@ -1,8 +1,11 @@
 html {
 	height: 100%;
 	margin: auto;
+	background:#CFD8DC;
 }
 body {
+	display: flex;
+	flex-direction: row;
 	font-family: "Open Sans", sans-serif;
 	height: 100%;
 	margin: auto;
@@ -12,10 +15,11 @@ header {
 	background: #455A64;
 	float: left;
 	height: 100%;
-	padding: 10px;
+/*	padding: 10px;*/
 	text-align: center;
-	width: 50%;
-	position: fixed;
+	width: 48.5%;
+/*	position: fixed;*/
+	flex: 1;
 	}
 
 h1 {
@@ -24,19 +28,21 @@ h1 {
 	font-size: 54pt;
 	font-weight: 800; 
 	margin: auto;
-	margin-top: 28%;
+/*	margin-top: 28%;*/
 }
 
 section {
 	background: #CFD8DC;
-	float: left;
+/*	float: left;*/
 	font-weight: 800;
-	height: 125%;
+	height: auto;
 	margin: 0px;
 	padding: 10px;
-	width: 48.5%;
-	position: relative;
-	left:50%;
+/*	width: 48.5%;*/
+/*	position: relative;*/
+/*	left:50%;*/
+	flex: 1;
+	overflow-y: scroll;
 }
 
 article {
@@ -46,7 +52,7 @@ article {
 	margin: 6% auto;
 	padding: 2% 5%;
 	text-align: left;
-	width: 80%;
+	width: 78%;
 }
 
 button {
@@ -62,6 +68,11 @@ h2 {
 
 }
 
+hr{color: #CFD8DC;
+	margin: 20px auto;
+	width: 100%;
+}
+
 a {
 	color: #607D8B;
 	font-size: 14pt;
@@ -75,8 +86,18 @@ a:hover {
 	font-weight: bold;
 }
 
+.header-container {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+/*    padding-left: 30px;*/
+}
+
 .first-field {
-	display: inline-block;
+/*	empty*/
+/*	display: inline-block;*/
 }
 
 .link-logo {
@@ -86,7 +107,7 @@ a:hover {
 .website-user-input {
 	font-size: 18pt;
 	height: 50%;
-	width: 100%;
+	width: 98%;
 	margin: 40px auto;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -95,8 +116,8 @@ a:hover {
 .url-user-input {
 	font-size: 18pt;
 	height: 50%;
-	width: 100%;
-	margin: 40px auto;
+	width: 98%;
+/*	margin: 40px auto;*/
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
@@ -110,8 +131,8 @@ a:hover {
 	font-weight: bold;
 	height: 50%;
 	margin: 40px auto;
-	width: 95%;
-	padding: 2%;
+	width: 99.5%;
+	padding: 1% 3%;
 }
 
 .first-article {
@@ -159,10 +180,6 @@ a:hover {
 	background: #FFD773;
 }
 
-hr{color: #CFD8DC;
-	margin: 20px auto;
-	width: 100%;
-}
 
 .read-link {
 	background:#F2F4F4;
@@ -177,4 +194,25 @@ hr{color: #CFD8DC;
 	color: #F05A28;
 }
 
-@media (max-width: 700px)
+@media (max-width: 900px){
+
+	body{
+		flex-direction: 
+		column
+	}
+	
+	header{
+		width: 100%;
+	}
+
+	section {
+	overflow-y: unset;
+}
+
+/*	.website-user-input {
+	margin-top: 20px auto;
+ }
+ 	
+ 	.url-user-input {
+    margin-bottom: 40px auto;
+}*/
