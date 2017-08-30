@@ -5,22 +5,15 @@ var websiteInput = $('.website-user-input');
 
 var urlInput = $('.url-user-input');
 
-var totalLinkCounter = 0;
-
-var totalReadCounter = 0;
-
 
 // Event Listeners
 
 
 $('.submit').on('click', prependCard);
 
-$('.submit').on('click', totalLinksOnPage)
+$('.submit').on('click', totalLinksOnPage);
 
-$('.submit').on('click', totalUnread)
-
-
-
+$('.submit').on('click', totalUnread);
 
 $('.bookmark-container').on('click', function(event){
 	event.preventDefault();
@@ -33,7 +26,6 @@ $('.bookmark-container').on('click', function(event){
 
 	if(event.target.className === 'delete') {
 		currentCard.remove();
-		deleteCounter();
 		totalLinksOnPage();
 		totalUnread();	
 	}
@@ -43,9 +35,6 @@ websiteInput.on('input', enableSubmitBtn);
 urlInput.on('input', enableSubmitBtn);
 
 $('.bookmark-container').on('click', totalRead);
-
-// $('.bookmark-container').on('click', totalUnread);
-
 
 // Functions 
 
@@ -70,7 +59,6 @@ function prependCard(event) {
 	);
 	redisableSubmitBtn();
 	deleteInputFields();
-	incramentCounter();
 }
 
 function enableSubmitBtn() {
@@ -88,32 +76,21 @@ function deleteInputFields(){
 	urlInput.val('');
 }
 
-function incramentCounter(){
-
-	// console.log(totalLinkCounter);
-	totalLinkCounter++;
-	// console.log(totalLinkCounter);
-}
-
-function deleteCounter(){
-	// console.log(totalLinkCounter);
-	totalLinkCounter--;
-	// console.log(totalLinkCounter);
-}
-
 function totalLinksOnPage(){
-	var y = $('.first-article').length;
-	// console.log(y);
+	var numberOfLinks = $('.first-article').length;
+	$('.total-number').append(numberOfLinks);
+	console.log('totalLinks',numberOfLinks);
 }
 
 function totalRead(){
-	var n = $('.read-link').length;
-	// console.log(n);
+	var numberOfRead = $('.read-link').length;
+	$('.total-read-number').append(numberOfRead);
+	console.log('totalRead',numberOfRead);
 }
 
-
 function totalUnread(){
-	var y = $('.first-article').length;
-	var n = $('.read-link').length;
-	console.log(y-n);
+	var numberOfLinks = $('.first-article').length;
+	var numberOfRead= $('.read-link').length;
+	$('.total-unread-number').append(numberOfLinks-numberOfRead);
+	console.log(numberOfLinks-numberOfRead);
 }
