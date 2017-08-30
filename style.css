@@ -23,9 +23,10 @@ header {
 h1 {
 	color:#FFFFFF;
 	display: block;
-	font-size: 54pt;
+	font-size: 91px;
 	font-weight: 800; 
 	margin: auto;
+	letter-spacing: 5px;
 }
 
 section {
@@ -98,8 +99,8 @@ a:hover {
 }
 
 .link-logo {
-    height: 55px;
-    width: 24%;
+    height: 74px;
+    width: 28%;
 }
 
 .total-read{

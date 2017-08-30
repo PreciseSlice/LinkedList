@@ -36,6 +36,8 @@ urlInput.on('input', enableSubmitBtn);
 
 $('.bookmark-container').on('click', totalRead);
 
+
+
 // Functions 
 
 
@@ -67,6 +69,7 @@ function enableSubmitBtn() {
 	}
 } 
 
+
 function redisableSubmitBtn(){
 	$('.submit').attr('disabled', true);
 }
@@ -78,19 +81,16 @@ function deleteInputFields(){
 
 function totalLinksOnPage(){
 	var numberOfLinks = $('.first-article').length;
-	$('.total-number').append(numberOfLinks);
-	console.log('totalLinks',numberOfLinks);
+	$('.total-number').text(numberOfLinks);
 }
 
 function totalRead(){
 	var numberOfRead = $('.read-link').length;
-	$('.total-read-number').append(numberOfRead);
-	console.log('totalRead',numberOfRead);
+	$('.total-read-number').text(numberOfRead);
 }
 
 function totalUnread(){
 	var numberOfLinks = $('.first-article').length;
 	var numberOfRead= $('.read-link').length;
-	$('.total-unread-number').append(numberOfLinks-numberOfRead);
-	console.log(numberOfLinks-numberOfRead);
+	$('.total-unread-number').text(numberOfLinks-numberOfRead);
 }
