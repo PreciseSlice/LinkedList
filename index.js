@@ -7,6 +7,8 @@ var urlInput = $('.url-user-input');
 
 var totalLinkCounter = 0;
 
+var totalReadCounter = 0;
+
 
 // Event Listeners
 
@@ -27,7 +29,7 @@ $('.bookmark-container').on('click', function(event){
 	if(event.target.className === 'read') { 
 		currentCard.toggleClass('read-link');
 		totalUnread();
-	}
+  }
 
 	if(event.target.className === 'delete') {
 		currentCard.remove();
@@ -87,6 +89,7 @@ function deleteInputFields(){
 }
 
 function incramentCounter(){
+
 	// console.log(totalLinkCounter);
 	totalLinkCounter++;
 	// console.log(totalLinkCounter);
