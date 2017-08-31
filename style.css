@@ -3,6 +3,7 @@ html {
 	height: 100%;
 	margin: auto;
 }
+
 body {
 	display: flex;
 	flex-direction: row;
@@ -42,7 +43,6 @@ section {
 table {
 	color:#455A64;
 	margin: auto;
-		
 }
 
 th{
@@ -113,7 +113,6 @@ a:hover {
 	text-align: center;
 }
 
-
 .total-unread{
 	color:#455A64;
 	float: right;
@@ -122,9 +121,7 @@ a:hover {
 	margin-right: 20px;
 	margin-top: 0;
 	text-align: center;
-
 }
-
 
 .website-user-input {
 	font-size: 18pt;
@@ -135,7 +132,6 @@ a:hover {
 	padding-top: 1%;
 	width: 97%;
 }
-
 
 .url-user-input {
 	font-size: 18pt;
@@ -181,7 +177,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-
 .read:hover {
 	color: #455A64;
 	font-weight: bold;
@@ -203,7 +198,6 @@ a:hover {
 
 .read-link {
 	background:#F2F4F4;
-	
 }
 
 .read-link .read {

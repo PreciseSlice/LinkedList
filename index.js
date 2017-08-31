@@ -95,7 +95,6 @@ function totalUnread(){
 	$('.total-unread-number').text(numberOfLinks-numberOfRead);
 }
 
-
 $('.url-user-input').on('focus', function(){
-	$(this).val('https://')
+	$(this).val('https://');
 });
