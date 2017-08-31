@@ -69,7 +69,6 @@ function enableSubmitBtn() {
 	}
 } 
 
-
 function redisableSubmitBtn(){
 	$('.submit').attr('disabled', true);
 }
