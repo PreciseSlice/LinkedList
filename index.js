@@ -48,7 +48,7 @@ function prependCard(event) {
 	
 	$('.bookmark-container').prepend(
 		
-		`<article class="first-article">
+		`<article class="first-article" role="bookmark card">
 			<h2 class=website-title>${websiteInputValue}</h2>
 			<hr />
 			<form>

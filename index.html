@@ -10,19 +10,19 @@
 
 	<body>
 
-		<header>
+		<header role="contains left half of page">
 		   <main class="header-container">
 				<h1>Linked<img class="link-logo" src="linked-list-logo.svg" alt="logo showing chain link">List</h1>
 				<form>
-					<input type="text" placeholder="Website Title" class="website-user-input"/>
-					<input type="url" placeholder="Website URL" class="url-user-input"/>
-					<input type="submit" class= "submit" value="Enter" disabled="true" />
+					<input type="text" placeholder="Website Title" class="website-user-input" role= "entry field for website title"/>
+					<input type="url" placeholder="Website URL" class="url-user-input" role = "entry filed for website url"/>
+					<input type="submit" class= "submit" value="Enter" disabled="true" role="submit button" />
 				</form>
 			</main>
 		</header>
 		
-		<section>
-			<table>
+		<section role="contains right half of page">
+			<table role="contains bookmark counter display">
 				<tr>
 					<th>Read</th>
 					<th>Unread</th>
@@ -34,7 +34,7 @@
 					<th class= "total-number">0</th>
 				</tr>
 			</table>
-		<div class="bookmark-container">
+		<div class="bookmark-container" role="contains bookmark cards">
 		</div>
 		</section>
 
