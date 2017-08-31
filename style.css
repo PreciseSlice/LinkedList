@@ -157,6 +157,7 @@ a:hover {
 
 .first-article {
 	margin-top: 2%;
+	overflow-wrap: break-word;
 }
 
 .read {
