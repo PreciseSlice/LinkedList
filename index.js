@@ -64,6 +64,7 @@ function prependCard(event) {
 }
 
 function enableSubmitBtn() {
+	if(urlInput.length<=7);
 	if(websiteInput.val() !== '' && urlInput.val() !== '') {
 		$('.submit').attr('disabled',false);
 	}
@@ -93,3 +94,8 @@ function totalUnread(){
 	var numberOfRead= $('.read-link').length;
 	$('.total-unread-number').text(numberOfLinks-numberOfRead);
 }
+
+
+$('.url-user-input').on('focus', function(){
+	$(this).val('http://')
+});
