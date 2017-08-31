@@ -52,7 +52,7 @@ function prependCard(event) {
 			<h2 class=website-title>${websiteInputValue}</h2>
 			<hr />
 			<form>
-			<a href="${urlInputValue}" class="url-placeholder">${urlInputValue}</a>
+			<a href="${urlInputValue}" onclick="window.open('${urlInputValue}','_blank')" class="url-placeholder">${urlInputValue}</a>
 			<hr />
 				<button class="read">Read</button>
 				<button class="delete">Delete</button>
@@ -97,5 +97,5 @@ function totalUnread(){
 
 
 $('.url-user-input').on('focus', function(){
-	$(this).val('http://')
+	$(this).val('https://')
 });
