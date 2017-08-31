@@ -23,10 +23,10 @@ header {
 h1 {
 	color:#FFFFFF;
 	display: block;
-	font-size: 91px;
+	font-size: 4.87vw;
 	font-weight: 800; 
+	letter-spacing: 3px;
 	margin: auto;
-	letter-spacing: 5px;
 }
 
 section {
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .link-logo {
-    height: 74px;
+    height: 7.5vh;
     width: 28%;
 }
 
@@ -269,4 +269,4 @@ a:hover {
 	header {
 		max-height: 44%;
 	}
-}	
+}
